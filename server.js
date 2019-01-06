@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send(database.users);
+  res.send('it is working!');
 });
 // just to try this way of assigning: (db, bcrypt) => (req, res) => {}
 app.post('/signin', signin.handleSignIn(db, bcrypt));
